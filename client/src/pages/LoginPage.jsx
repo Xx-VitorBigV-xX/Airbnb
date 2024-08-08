@@ -2,6 +2,7 @@ import Header from "../Header";
 import { Link } from "react-router-dom";
 
 export default function LoginPage() {
+
   return (
     <div className="mt-4 grow flex items-center justify-around">
       <div className="mb-64">
