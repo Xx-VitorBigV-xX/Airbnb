@@ -3,6 +3,7 @@ import "./App.css";
 import {Route, Routes,} from "react-router-dom";
 import IndexPage from "./pages/IndexPage";
 import LoginPage from "./pages/LoginPage";
+import AccountPage from "./pages/AccountPage.jsx";
 import Layout from "./Layout";
 import {useEffect} from "react";
 import RegisterPage from "./pages/RegisterPage";
@@ -22,6 +23,9 @@ function App() {
       {/** //? este path /login é o indereço / da url */}
       <Route path="/login" element={<LoginPage/>}/>
       <Route path="/register" element={<RegisterPage/>}/>
+      <Route path="/account/:subpage?" element={<AccountPage/>}/>
+      <Route path="/account/:subpage/:action" element={<AccountPage />}/>
+
     </Route>  
   </Routes>
    </UserContextProvider>
